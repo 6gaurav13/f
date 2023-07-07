@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
      "export": "yarn run build && next export && mv out _static",
-    "install": "yarn add --dev"
+    "install": "yarn add"
   },
   "engines": {
     "node": "18.x"
