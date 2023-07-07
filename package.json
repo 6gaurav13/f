@@ -8,10 +8,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-     "export": "yarn run build && next export && mv out _static"
+     "export": "yarn run build && next export && mv out _static",
+    "install": "yarn add --dev"
   },
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   },
   "dependencies": {
     "dayjs": "^1.11.7",
@@ -26,7 +27,8 @@
     "react-bricks": "^3.10.0",
     "react-dom": "^18.2.0",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+     "install": "yarn add --dev"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
