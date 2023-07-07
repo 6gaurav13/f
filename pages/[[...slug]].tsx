@@ -90,7 +90,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     cleanSlug = slug.join('/')
   }
 
-  const [page, header, footer] = await Promise.all([
+  const [page] = await Promise.all([
     fetchPage(cleanSlug, config.apiKey, context.locale, config.pageTypes).catch(
       () => {
         errorPage = true
@@ -98,11 +98,11 @@ export const getStaticProps: GetStaticProps = async (context) => {
       }
     ),
     fetchPage('header', config.apiKey, context.locale).catch(() => {
-      errorHeader = true
+      errorHeader = false
       return {}
     }),
     fetchPage('footer', config.apiKey, context.locale).catch(() => {
-      errorFooter = true
+      errorFooter = false
       return {}
     }),
   ])
@@ -110,12 +110,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       page,
-      header,
-      footer,
       errorNoKeys,
       errorPage,
-      errorHeader,
-      errorFooter,
     },
   }
 }
