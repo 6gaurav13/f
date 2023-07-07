@@ -27,7 +27,7 @@
     "react-dom": "^18.2.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-     "install": "yarn install"
+     "install": "yarn install --offline"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
