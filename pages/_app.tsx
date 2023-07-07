@@ -11,7 +11,7 @@ const MyApp = (props: AppProps) => {
       attribute="class"
       storageKey="color-mode"
       enableSystem={false}
-      defaultTheme="light"
+      defaultTheme="dark"
     >
       <ReactBricksApp {...props}></ReactBricksApp>
     </ThemeProvider>
