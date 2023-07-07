@@ -6,7 +6,7 @@ const PagePreview: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Preview</title>
+        <title>Gaurav Singh Bhadauriya</title>
       </Head>
       <Preview />
     </>
